@@ -25,7 +25,7 @@
                 <li class="sidebar-brand"><a href="#page-top">Mikul Muzumdar</a></li>
                 <li class="sidebar-nav-item"><a href="#page-top">Home</a></li>
                 <li class="sidebar-nav-item"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item"><a href="#services">Skills</a></li>
+                <li class="sidebar-nav-item"><a href="#skills">Skills</a></li>
                 <li class="sidebar-nav-item"><a href="#portfolio">Portfolio</a></li>
                 <li class="sidebar-nav-item"><a href="#contact">Contact</a></li>
             </ul>
@@ -34,13 +34,33 @@
         <header class="masthead d-flex align-items-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/profile_pic.png" alt="..." />
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="masthead-avatar mb-5" src="assets/profile_pic.png" alt="..."/>
+                      </div>
+                      <div class="flip-card-back">
+                        <img class="masthead-avatar mb-5" src="assets/rutgers_logo.png" alt="..."/>
+                      </div>
+                    </div>
+                </div>
                 <!-- Masthead Text-->
                 <div class="container px-4 px-lg-5 text-center">
-                    <h1 class="mb-1">Mikul Muzumdar</h1>
-                    <h3 class="mb-5"><em>Business Analytics & Information Technology Student at Rutgers University</em></h3>
-                    <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                    <div style = "color:azure;">
+                        <h1 class="mb-1">Mikul Muzumdar</h1>
+                        <h3 class="mb-5"><em>Business Analytics & Information Technology Student at Rutgers University</em></h3>
+                    </div>
                 </div>
+                <a href="#about">
+                    <div id="container">
+                        <button class="learn-more">
+                        <span class="circle" aria-hidden="true">
+                            <span class="icon arrow"></span>
+                        </span>
+                        <span class="button-text">Learn More</span>
+                        </button>
+                    </div>
+                </a>
             </div>
         </header>
         <!-- About-->
@@ -48,21 +68,23 @@
             <div class="container px-4 px-lg-5 text-center">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-10">
-                        <h2>About</h2>
+                        <h2 style = "color:black;">About</h2>
                         <p class="lead mb-5">
                             Mikul Muzumdar is a Senior at Rutgers University, majoring in Business Analytics & Information Technology, and minoring in Economics. Through his BAIT and Econ classes, he has experience in large-scale statistical analysis and forecasting/modeling. He’s passionate about data and has an interest in data mining and machine learning. He’d like to utilize his experiences to pursue a career in Data Analytics or Business Intelligence.
                         </p>
-                        <a class="btn btn-dark btn-xl" href="#services">Skills and Tools</a>
+                        <a href="#skills">
+                            <button class="shine">Skills and Tools</button>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Services-->
-        <section class="content-section bg-primary text-white text-center" id="services">
+        <!-- Skills-->
+        <section class="content-section bg-primary text-white text-center" id="skills">
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading">
                     <h3 class="text-secondary mb-0">Skills</h3>
-                    <h2 class="mb-5">Technical Skills</h2>
+                    <h2 class="mb-5">Programming Languages</h2>
                 </div>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -93,7 +115,7 @@
             <div class="container px-4 px-lg-5">
                 <div class="content-section-heading text-center">
                     <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5">Recent Projects</h2>
+                    <h2 class="mb-5" style = "color:black;">Recent Projects</h2>
                 </div>
                 <div class="row gx-0">
                     <div class="col-lg-6">
@@ -145,7 +167,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Vaccine Sentiments</div>
-                                    <p class="mb-0">R notebook that performs Sentiment Analysis from tweeets about COVID-19 and the vaccine.</p>
+                                    <p class="mb-0">An R notebook that performs Sentiment Analysis from tweeets about COVID-19 and the vaccine.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
@@ -156,7 +178,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Census Analysis</div>
-                                    <p class="mb-0">Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
+                                    <p class="mb-0">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_6.JPG" alt="..." />
@@ -230,7 +252,7 @@
                                             </ul>
                                         </div>
                                     </footer>
-                                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
+                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
                                 </div>
                             </div>
                         </div>
@@ -279,7 +301,7 @@
                                             </ul>
                                         </div>
                                     </footer>
-                                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
+                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
                                 </div>
                             </div>
                         </div>
@@ -328,7 +350,7 @@
                                             </ul>
                                         </div>
                                     </footer>
-                                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
+                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
                                 </div>
                             </div>
                         </div>
@@ -377,7 +399,7 @@
                                             </ul>
                                         </div>
                                     </footer>
-                                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
+                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
                                 </div>
                             </div>
                         </div>
@@ -423,7 +445,7 @@
                                             </ul>
                                         </div>
                                     </footer>
-                                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
+                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
                                 </div>
                             </div>
                         </div>
@@ -469,7 +491,7 @@
                                             </ul>
                                         </div>
                                     </footer>
-                                    <button class="btn btn-primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
+                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
                                 </div>
                             </div>
                         </div>
