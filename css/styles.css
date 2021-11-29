@@ -11978,12 +11978,11 @@ input[type=radio] {
 .cards {
   position: relative;
   width: 100%;
-  height: 100%;
   margin-bottom: 20px;
 }
 .card > img {
   background-color: #022777;
-  width: auto;
+  width: 100%;
   height: auto;
 
 }
