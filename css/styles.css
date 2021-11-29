@@ -11567,6 +11567,10 @@ footer.footer .social-link:hover {
   }
 }
 
+.portfolio-modal {
+  opacity: 0.9;
+}
+
 
 .caption-style-3{
   list-style-type: none;
