@@ -11956,7 +11956,6 @@ button.primary:hover:after {
 }
 .carousel-container {
   width: 60%;
-  height: 10%;
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
@@ -11984,9 +11983,8 @@ input[type=radio] {
 }
 .card > img {
   background-color: #022777;
-  object-fit: cover;
   max-width:1000px;
-  max-height:1000px;
+  max-height:40vh;
   width: auto;
   height: auto;
 
