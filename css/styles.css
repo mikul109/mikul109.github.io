@@ -11983,8 +11983,6 @@ input[type=radio] {
 }
 .card > img {
   background-color: #022777;
-  max-width:1000px;
-  max-height:40vh;
   width: auto;
   height: auto;
 
