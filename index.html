@@ -31,7 +31,7 @@
             </ul>
         </nav>
         <!-- Header-->
-        <header class="masthead d-flex align-items-center">
+        <header class="masthead d-flex align-items-center" style="padding-top: 0;">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <div class="flip-card">
@@ -61,6 +61,21 @@
                         </button>
                     </div>
                 </a>
+                <div class="carousel-container">
+                    <input type="radio" name="slider" id="item-1" checked>
+                    <input type="radio" name="slider" id="item-2">
+                    <input type="radio" name="slider" id="item-3">
+                  <div class="cards">
+                    <label class="card" for="item-1" id="song-1">
+                            <img src="assets/img/Capture_4.JPG" alt="">
+                    </label>
+                    <label class="card" for="item-2" id="song-2">
+                        <img src="assets/img/Capture_1.JPG" alt="">
+                    </label>
+                    <label class="card" for="item-3" id="song-3">
+                        <img src="assets/img/Capture_2.JPG" alt="">
+                    </label>
+                  </div>
             </div>
         </header>
         <!-- About-->
@@ -155,11 +170,11 @@
                         <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
                             <div class="caption">
                                 <div class="caption-content">
-                                    <div class="h2">Placeholder</div>
-                                    <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+                                    <div class="h2">Employment Statistics Visualization</div>
+                                    <p class="mb-0">A chart.js application that uses data from the U.S. Bureau of Labor Statistics.</p>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." />
+                            <img class="img-fluid" src="assets/img/Capture_4.JPG" alt="..." />
                         </a>
                     </div>
                     <div class="col-lg-6">
@@ -167,7 +182,7 @@
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Vaccine Sentiments</div>
-                                    <p class="mb-0">An R notebook that performs Sentiment Analysis from tweeets about COVID-19 and the vaccine.</p>
+                                    <p class="mb-0">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
@@ -239,7 +254,7 @@
                                         </li>
                                     </ul>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Web Application built in R with Shiny. This app analyzes global Fossil Fuel Emissions, including global trends and time series forecasts, country specific trends, and industry specific trends. The data is from Our World in Data's github repository. The application is hosted on the shinyapps.io cloud.</p>
+                                    <p class="mb-4">Web Application built in R with Shiny. This app analyzes global Fossil Fuel Emissions, including global trends and time series forecasts, country specific trends, and industry specific trends. The data is from Our World in Data's GitHub repository. The application is hosted on the shinyapps.io cloud.</p>
                                     <footer class="footer text-center">
                                         <div class="container px-4 px-lg-5">
                                             <ul class="list-inline mb-5">
@@ -368,33 +383,33 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Workspace</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Employment Statistics Visualization</h2>
                                     <br>
                                     <br>
                                     <!-- Portfolio Modal - Image-->
                                     <ul class="caption-style-3">
                                         <li>
-                                            <img src="assets/img/portfolio-4.jpg" alt="...">
+                                            <img src="assets/img/Capture_4.JPG" alt="...">
                                             <div class="layer"></div>
                                             <div class="caption">
                                                 <div class="blur"></div>
                                                 <div class="caption-text">
-                                                    <h2>Placeholder</h2>
-                                                    <p>Lorem ipsum dolor.</p>
+                                                    <h2>Employment Statistics Visualization</h2>
+                                                    <p>Chart.js Application.</p>
                                                 </div>
                                             </div>
                                         </li>
                                     </ul>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">A Web Application built using chart.js. It requests data from the US Bureau of Labor Statistics data API and visualizes employment statistics for each super sector. The super sector lines are hidden by default and can be toggled to add or remove lines. This application is hosted using a GitHub Project Page.</p>
                                     <footer class="footer text-center">
                                         <div class="container px-4 px-lg-5">
                                             <ul class="list-inline mb-5">
                                                 <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="" target="_blank"><i class="fas fa-globe"></i></a>
+                                                    <a class="social-link rounded-circle text-white" href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-globe"></i></a>
                                                 </li>
                                                 <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="" target="_blank"><i class="icon-social-github"></i></a>
+                                                    <a class="social-link rounded-circle text-white" href="https://github.com/mikul109/bls-chart" target="_blank"><i class="icon-social-github"></i></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -435,7 +450,7 @@
                                         </li>
                                     </ul>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">R notebook that pulls tweets using the Twitter Api and performs sentiment analysis. The notebook displays unique word counts and sentiment analysis charts using the Bing and NRC lexicons for the hashtags #covid19 and #vaccine. The purpose is to understand and visualize the sentiments from Twitter users regarding COVID-19 and the vaccines.</p>
+                                    <p class="mb-4">R notebook that pulls tweets using the Twitter API and performs sentiment analysis. The notebook displays unique word counts and sentiment analysis charts using the Bing and NRC lexicons for the hashtags #covid19 and #vaccine. The purpose is to understand and visualize the sentiments from Twitter users regarding COVID-19 and the vaccines.</p>
                                     <footer class="footer text-center">
                                         <div class="container px-4 px-lg-5">
                                             <ul class="list-inline mb-5">
@@ -481,7 +496,7 @@
                                         </li>
                                     </ul>
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Jupyter notebook written in Python that analyzes certain variables from the Census's ACS 5-year estimates. The notebook pulls 2018 data from the Census Api and analyzes nationwide unemployment, inequality, and income. For each indicator, it visualizes the country and state distributions and the relationships between these variables. The notebook performs K-means clustering to split counties into income quartiles and analyze these relationships by cluster.</p>
+                                    <p class="mb-4">Jupyter notebook written in Python that analyzes certain variables from the Census's ACS 5-year estimates. The notebook pulls 2018 data from the Census API and analyzes nationwide unemployment, inequality, and income. For each indicator, it visualizes the country and state distributions and the relationships between these variables. The notebook performs K-means clustering to split counties into income quartiles and analyze these relationships by cluster.</p>
                                     <footer class="footer text-center">
                                         <div class="container px-4 px-lg-5">
                                             <ul class="list-inline mb-5">
