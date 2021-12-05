@@ -13,7 +13,7 @@
         <!-- Simple line icons-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,700,100italic,300italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
@@ -124,86 +124,195 @@
         <section class="content-section " id="portfolio">
             <div class="container px-4 px-lg-5">
                     <h2 class="title" style="font-weight: 100;">Portfolio</h2>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <div class="portfolio-item">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Fossil Fuel Application</div>
-                                    <p class="mb-5">An R Shiny Web Application analyzing global Fossil Fuel Emissions.</p>
-                                    <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                    <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                    <div class="tabs">
+                        <div class="tab-2">
+                          <label for="tab2-1">All</label>
+                          <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                          <div>
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">Fossil Fuel Application</div>
+                                                <p class="mb-5">An R Shiny Web Application analyzing global Fossil Fuel Emissions.</p>
+                                                <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_1.JPG" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">COVID-19 Dashboard</div>
+                                                <p class="mb-5">A Python Dash Application visualizing daily COVID-19 spread and vaccination data.</p>
+                                                <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_2.JPG" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">NBA Web Scraper</div>
+                                                <p class="mb-5">A Python Web Scraper that uses BeautifulSoup to scrape NBA data from basketball-reference.</p>
+                                                <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_3.JPG" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">Employment Statistics Visualization</div>
+                                                <p class="mb-5">A chart.js application that uses data from the U.S. Bureau of Labor Statistics.</p>
+                                                <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_4.JPG" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">Vaccine Sentiments</div>
+                                                <p class="mb-5">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
+                                                <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">Census Analysis</div>
+                                                <p class="mb-5">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
+                                                <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_6.JPG" alt="..." />
+                                    </div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/Capture_1.JPG" alt="..." />
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="portfolio-item">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">COVID-19 Dashboard</div>
-                                    <p class="mb-5">A Python Dash Application visualizing daily COVID-19 spread and vaccination data.</p>
-                                    <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                    <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                        <div class="tab-2">
+                          <label for="tab2-2">Python</label>
+                          <input id="tab2-2" name="tabs-two" type="radio">
+                          <div>
+                            <div class="row gx-0">
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">COVID-19 Dashboard</div>
+                                                <p class="mb-5">A Python Dash Application visualizing daily COVID-19 spread and vaccination data.</p>
+                                                <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_2.JPG" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">NBA Web Scraper</div>
+                                                <p class="mb-5">A Python Web Scraper that uses BeautifulSoup to scrape NBA data from basketball-reference.</p>
+                                                <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_3.JPG" alt="..." />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="portfolio-item">
+                                        <div class="caption">
+                                            <div class="caption-content">
+                                                <div class="h2">Census Analysis</div>
+                                                <p class="mb-5">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
+                                                <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                            </div>
+                                        </div>
+                                        <img class="img-fluid" src="assets/img/Capture_6.JPG" alt="..." />
+                                    </div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/Capture_2.JPG" alt="..." />
+                          </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="portfolio-item">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">NBA Web Scraper</div>
-                                    <p class="mb-5">A Python Web Scraper that uses BeautifulSoup to scrape NBA data from basketball-reference.</p>
-                                    <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                    <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                        <div class="tab-2">
+                            <label for="tab2-3">R</label>
+                            <input id="tab2-3" name="tabs-two" type="radio">
+                            <div>
+                                <div class="row gx-0">
+                                    <div class="col-lg-6">
+                                        <div class="portfolio-item">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    <div class="h2">Fossil Fuel Application</div>
+                                                    <p class="mb-5">An R Shiny Web Application analyzing global Fossil Fuel Emissions.</p>
+                                                    <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                    <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                </div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/Capture_1.JPG" alt="..." />
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="portfolio-item">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    <div class="h2">Vaccine Sentiments</div>
+                                                    <p class="mb-5">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
+                                                    <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                </div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/Capture_3.JPG" alt="..." />
                         </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="portfolio-item">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Employment Statistics Visualization</div>
-                                    <p class="mb-5">A chart.js application that uses data from the U.S. Bureau of Labor Statistics.</p>
-                                    <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                    <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                        <div class="tab-2">
+                            <label for="tab2-4">JavaScript</label>
+                            <input id="tab2-4" name="tabs-two" type="radio">
+                            <div>
+                                <div class="row gx-0">
+                                    <div class="col-lg-6">
+                                        <div class="portfolio-item">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    <div class="h2">Employment Statistics Visualization</div>
+                                                    <p class="mb-5">A chart.js application that uses data from the U.S. Bureau of Labor Statistics.</p>
+                                                    <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                                    <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                </div>
+                                            </div>
+                                            <img class="img-fluid" src="assets/img/Capture_4.JPG" alt="..." />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <img class="img-fluid" src="assets/img/Capture_4.JPG" alt="..." />
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="portfolio-item">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Vaccine Sentiments</div>
-                                    <p class="mb-5">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
-                                    <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="portfolio-item">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Census Analysis</div>
-                                    <p class="mb-5">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
-                                    <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Capture_6.JPG" alt="..." />
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
+
         <!-- Contact info-->
         <section class="content-section" id="contact" style="height: 100px; padding: 0;">
             <section class="content-section text-white" style="padding: 0;">
@@ -227,6 +336,7 @@
                     </div>
                 </footer>
                 </div>
+                <p class="text-muted small mb-0" style="text-align: center;">Copyright &copy; Mikul Muzumdar 2021</p>
             </section>
         </section>
         <!-- Scroll to Top Button-->
