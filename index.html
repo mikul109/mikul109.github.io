@@ -16,51 +16,35 @@
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"> </script>
+
     </head>
     <body id="page-top">
+        <!-- particles.js container -->
+        <div id="particles-js"></div>
         <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-        <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <li class="sidebar-brand" style="font-weight: 100;"><a href="#page-top">Mikul Muzumdar</a></li>
-                <li class="sidebar-nav-item" style="font-weight: 100;"><a href="#page-top">Home</a></li>
-                <li class="sidebar-nav-item" style="font-weight: 100;"><a href="#about">About</a></li>
-                <li class="sidebar-nav-item" style="font-weight: 100;"><a href="#skills">Skills</a></li>
-                <li class="sidebar-nav-item" style="font-weight: 100;"><a href="#portfolio">Portfolio</a></li>
-                <li class="sidebar-nav-item" style="font-weight: 100;"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <a class="menu-toggle rounded" href="#"><i class="fas fa-times"></i></a>
+        <div id="sidebar-wrapper">
+            <nav class="navMenu">
+                <a class="navItem" href="#page-top">Home</a>
+                <a class="navItem" href="#about">About</a>
+                <a class="navItem" href="#skills">Skills</a>
+                <a class="navItem" href="#portfolio">Portfolio</a>
+                <a class="navItem" href="#contact">Contact</a>
+            </nav>
+        </div>
         <!-- Header-->
-        <header class="masthead d-flex align-items-center" style="padding-top: 0;">
+        <header class="masthead d-flex align-items-center" style="padding-top: 10%;">
             <div class="container d-flex align-items-center flex-column">
-                <!-- Masthead Avatar Image-->
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                      <div class="flip-card-front">
-                        <img class="masthead-avatar mb-5" src="assets/profile_pic.png" alt="..."/>
-                      </div>
-                      <div class="flip-card-back">
-                        <img class="masthead-avatar mb-5" src="assets/rutgers_logo.png" alt="..."/>
-                      </div>
-                    </div>
-                </div>
                 <!-- Masthead Text-->
                 <div class="container px-4 px-lg-5 text-center">
-                    <div style = "color:azure;">
-                        <h1 class="mb-1" style="font-weight: 100;">Mikul Muzumdar</h1>
-                        <h3 class="mb-5" style="font-weight: 100;"><em>Business Analytics & Information Technology Student at Rutgers University</em></h3>
+                    <div>
+                        <h1 class="mb-1" style="font-weight: 100; color:azure;">Mikul Muzumdar</h1>
+                        <h3 class="mb-5" style="font-weight: 100; color: dimgrey;"><em>Business Analytics & Information Technology Student at Rutgers University</em></h3>
                     </div>
                 </div>
-                <a href="#about">
-                    <div id="container">
-                        <button class="learn-more">
-                        <span class="circle" aria-hidden="true">
-                            <span class="icon arrow"></span>
-                        </span>
-                        <span class="button-text">Learn More</span>
-                        </button>
-                    </div>
-                </a>
+                <h4 style="color: rgb(89,226,196);">Featured Projects</h4>
                 <div class="carousel-container">
                     <input type="radio" name="slider" id="item-1" checked>
                     <input type="radio" name="slider" id="item-2">
@@ -75,33 +59,44 @@
                     <label class="card" for="item-3" id="song-3">
                         <img src="assets/img/Capture_2.JPG" alt="">
                     </label>
-                  </div>
+                </div>
+                <a href="#about" style="margin-top: 40%;">
+                    <button class="learn-more">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Learn More</span>
+                    </button>
+                </a>
             </div>
         </header>
         <!-- About-->
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-10">
-                        <h2 style = "color:black;">About Me</h2>
-                        <p class="lead mb-5">
-                            I am a Senior at Rutgers University, majoring in Business Analytics & Information Technology, and minoring in Economics. Through my BAIT and Econ classes, I have experience in large-scale statistical analysis and forecasting/modeling. I'm passionate about data and have an interest in data mining and machine learning. I’d like to utilize my experiences to pursue a career in Data Analytics or Business Intelligence.
+        <section class="content-section" id="about" style="padding-top: 5%; padding-bottom: 0;">
+            <div class="container px-4 px-lg-5 text-left">
+                <div class="row gx-4 gx-lg-5 justify-content-left">
+                    <div class="col-lg-0">
+                        <h2 class = "title" style="font-weight: 100;">About Me</h2>
+                        <p class="mb-0" style="color: dimgrey;">
+                           <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I am a Senior at Rutgers University, majoring in Business Analytics & Information Technology, and minoring in Economics.
                         </p>
-                        <a href="#skills">
-                            <button class="shine">Skills and Tools</button>
-                        </a>
+                        <p class="mb-0" style="color: dimgrey;">
+                            <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I have experience in large-scale statistical analysis and forecasting/modeling in R and Python.
+                        </p>
+                        <p class="mb-0" style="color: dimgrey;">
+                            <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I'm passionate about data and have an interest in data mining and machine learning.
+                        </p>
+                        <p class="mb-5" style="color: dimgrey;">
+                            <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I’d like to utilize my experiences to pursue a career in Data Analytics or Business Intelligence.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Skills-->
-        <section class="content-section bg-primary text-white text-center" id="skills" style="background-image: url('assets/img/dots_1.jpg'); opacity: 0.8;">
+        <section class="content-section text-white text-center" id="skills" style="padding-top: 5%; padding-bottom: 0;">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading">
-                    <h3 class="text-secondary mb-0">Skills</h3>
-                    <h2 class="mb-5">Programming Languages</h2>
-                </div>
-                <div class="row gx-4 gx-lg-5">
+                    <h2 class = "title" style="margin-bottom: 5%; font-weight: 100;">Skills</h2>
+                <div class="row gx-4 gx-lg-5" style="font-weight: 100;">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
                         <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-python"></i></span>
                         <h4><strong>Python</strong></h4>
@@ -126,92 +121,99 @@
             </div>
         </section>
         <!-- Portfolio-->
-        <section class="content-section bg-light" id="portfolio">
+        <section class="content-section " id="portfolio">
             <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">Portfolio</h3>
-                    <h2 class="mb-5" style = "color:black;">Recent Projects</h2>
-                </div>
+                    <h2 class="title" style="font-weight: 100;">Portfolio</h2>
                 <div class="row gx-0">
                     <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Fossil Fuel Application</div>
-                                    <p class="mb-0">An R Shiny Web Application analyzing global Fossil Fuel Emissions.</p>
+                                    <p class="mb-5">An R Shiny Web Application analyzing global Fossil Fuel Emissions.</p>
+                                    <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                    <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_1.JPG" alt="..." />
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">COVID-19 Dashboard</div>
-                                    <p class="mb-0">A Python Dash Application visualizing daily COVID-19 spread and vaccination data.</p>
+                                    <p class="mb-5">A Python Dash Application visualizing daily COVID-19 spread and vaccination data.</p>
+                                    <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                    <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_2.JPG" alt="..." />
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">NBA Web Scraper</div>
-                                    <p class="mb-0">A Python Web Scraper that uses BeautifulSoup to scrape NBA data from basketball-reference.</p>
+                                    <p class="mb-5">A Python Web Scraper that uses BeautifulSoup to scrape NBA data from basketball-reference.</p>
+                                    <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                    <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_3.JPG" alt="..." />
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Employment Statistics Visualization</div>
-                                    <p class="mb-0">A chart.js application that uses data from the U.S. Bureau of Labor Statistics.</p>
+                                    <p class="mb-5">A chart.js application that uses data from the U.S. Bureau of Labor Statistics.</p>
+                                    <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
+                                    <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_4.JPG" alt="..." />
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Vaccine Sentiments</div>
-                                    <p class="mb-0">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
+                                    <p class="mb-5">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
+                                    <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-6">
-                        <a class="portfolio-item" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div class="portfolio-item">
                             <div class="caption">
                                 <div class="caption-content">
                                     <div class="h2">Census Analysis</div>
-                                    <p class="mb-0">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
+                                    <p class="mb-5">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
+                                    <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
                                 </div>
                             </div>
                             <img class="img-fluid" src="assets/img/Capture_6.JPG" alt="..." />
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Contact info-->
         <section class="content-section" id="contact" style="height: 100px; padding: 0;">
-            <section class="content-section text-white" style="padding: 0; background-image: url('assets/img/dots_2.jpg'); opacity: 0.7;">
-                <div class="container px-4 px-lg-5 text-center">
-                    <h2 style="padding-top: 30px;">Contact Information</h2>
+            <section class="content-section text-white" style="padding: 0;">
+                <div class="container px-4 px-lg-5 text-left">
+                    <h2 class="title" style="padding-top: 30px; font-weight: 100;">Contact Information</h2>
                 </div>
                 <!-- Footer-->
-                <footer class="footer text-center">
+                <footer class="footer text-left">
                     <div class="container px-4 px-lg-5">
-                        <ul class="list-inline">
+                        <ul class="list-inline" style="margin-left: 1%;">
                             <li class="list-inline-item">
                                 <a class="social-link rounded-circle text-white" href="mailto:mnm109@scarletmail.rutgers.edu"><i class="icon-envelope"></i></a>
                             </li>
@@ -227,294 +229,6 @@
                 </div>
             </section>
         </section>
-        <!-- Portfolio Modal 1-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Fossil Fuel Application</h2>
-                                    <br>
-                                    <br>
-                                    <!-- Portfolio Modal - Image-->
-                                    <ul class="caption-style-3">
-                                        <li>
-                                            <img src="assets/img/Capture_1.JPG" alt="...">
-                                            <div class="layer"></div>
-                                            <div class="caption">
-                                                <div class="blur"></div>
-                                                <div class="caption-text">
-                                                    <h2>Fossil Fuel Application</h2>
-                                                    <p>R Shiny Application.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Web Application built in R with Shiny. This app analyzes global Fossil Fuel Emissions, including global trends and time series forecasts, country specific trends, and industry specific trends. The data is from Our World in Data's GitHub repository. The application is hosted on the shinyapps.io cloud.</p>
-                                    <footer class="footer text-center">
-                                        <div class="container px-4 px-lg-5">
-                                            <ul class="list-inline mb-5">
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-globe"></i></a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="icon-social-github"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </footer>
-                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">COVID-19 Dashboard</h2>
-                                    <br>
-                                    <br>
-                                    <!-- Portfolio Modal - Image-->
-                                    <ul class="caption-style-3">
-                                        <li>
-                                            <img src="assets/img/Capture_2.JPG" alt="...">
-                                            <div class="layer"></div>
-                                            <div class="caption">
-                                                <div class="blur"></div>
-                                                <div class="caption-text">
-                                                    <h2>COVID-19 Dashboard</h2>
-                                                    <p>Python Dash Application.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Python Dash Flask App that visualizes daily COVID-19 data. This Dashboard analyzes global spread and vacination trends, utilizes ARIMA modeling to forecast global vaccination rates, and uses cumulative, daily, per capita, and smoothed time series datasets to compare the impact of the virus by country. The data for COVID-19 spread and vaccinations are from CSSE and Centers for Civic Impact at Johns Hopkins University respectively. The Dashboard has been deployed using Heroku.</p>
-                                    <footer class="footer text-center">
-                                        <div class="container px-4 px-lg-5">
-                                            <ul class="list-inline mb-5">
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-globe"></i></a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://github.com/mikul109/covid-app" target="_blank"><i class="icon-social-github"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </footer>
-                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 3-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">NBA Web Scraper</h2>
-                                    <br>
-                                    <br>
-                                    <!-- Portfolio Modal - Image-->
-                                    <ul class="caption-style-3">
-                                        <li>
-                                            <img src="assets/img/Capture_3.JPG" alt="...">
-                                            <div class="layer"></div>
-                                            <div class="caption">
-                                                <div class="blur"></div>
-                                                <div class="caption-text">
-                                                    <h2>NBA Web Scraper</h2>
-                                                    <p>Python Dash Application.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">A Python Web Scraper built using Dash. It scrapes per game NBA data for each player from basketball-reference by using BeautifulSoup. NBA data can be scraped from 1980-present, and is sorted alphabetically. The data table is interactive and filterable, and is linked to three column charts. The Dash App is hosted on Heroku.</p>
-                                    <footer class="footer text-center">
-                                        <div class="container px-4 px-lg-5">
-                                            <ul class="list-inline mb-5">
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-globe"></i></a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="icon-social-github"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </footer>
-                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 4-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Employment Statistics Visualization</h2>
-                                    <br>
-                                    <br>
-                                    <!-- Portfolio Modal - Image-->
-                                    <ul class="caption-style-3">
-                                        <li>
-                                            <img src="assets/img/Capture_4.JPG" alt="...">
-                                            <div class="layer"></div>
-                                            <div class="caption">
-                                                <div class="blur"></div>
-                                                <div class="caption-text">
-                                                    <h2>Employment Statistics Visualization</h2>
-                                                    <p>Chart.js Application.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">A Web Application built using chart.js. It requests data from the US Bureau of Labor Statistics data API and visualizes employment statistics for each super sector. The super sector lines are hidden by default and can be toggled to add or remove lines. This application is hosted using a GitHub Project Page.</p>
-                                    <footer class="footer text-center">
-                                        <div class="container px-4 px-lg-5">
-                                            <ul class="list-inline mb-5">
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-globe"></i></a>
-                                                </li>
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://github.com/mikul109/bls-chart" target="_blank"><i class="icon-social-github"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </footer>
-                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 5-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Vaccine Sentiments</h2>
-                                    <br>
-                                    <br>
-                                    <!-- Portfolio Modal - Image-->
-                                    <ul class="caption-style-3">
-                                        <li>
-                                            <img src="assets/img/Capture_5.png" alt="...">
-                                            <div class="layer"></div>
-                                            <div class="caption">
-                                                <div class="blur"></div>
-                                                <div class="caption-text">
-                                                    <h2>Vaccine Sentiments</h2>
-                                                    <p>R Markdown notebook.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">R notebook that pulls tweets using the Twitter API and performs sentiment analysis. The notebook displays unique word counts and sentiment analysis charts using the Bing and NRC lexicons for the hashtags #covid19 and #vaccine. The purpose is to understand and visualize the sentiments from Twitter users regarding COVID-19 and the vaccines.</p>
-                                    <footer class="footer text-center">
-                                        <div class="container px-4 px-lg-5">
-                                            <ul class="list-inline mb-5">
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="icon-social-github"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </footer>
-                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio Modal 6-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Census Analysis</h2>
-                                    <br>
-                                    <br>
-                                    <!-- Portfolio Modal - Image-->
-                                    <ul class="caption-style-3">
-                                        <li>
-                                            <img src="assets/img/Capture_6.JPG" alt="...">
-                                            <div class="layer"></div>
-                                            <div class="caption">
-                                                <div class="blur"></div>
-                                                <div class="caption-text">
-                                                    <h2>Census Analysis</h2>
-                                                    <p>Python Jupyter notebook.</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Jupyter notebook written in Python that analyzes certain variables from the Census's ACS 5-year estimates. The notebook pulls 2018 data from the Census API and analyzes nationwide unemployment, inequality, and income. For each indicator, it visualizes the country and state distributions and the relationships between these variables. The notebook performs K-means clustering to split counties into income quartiles and analyze these relationships by cluster.</p>
-                                    <footer class="footer text-center">
-                                        <div class="container px-4 px-lg-5">
-                                            <ul class="list-inline mb-5">
-                                                <li class="list-inline-item">
-                                                    <a class="social-link rounded-circle text-white" href="https://github.com/mikul109/census-data" target="_blank"><i class="icon-social-github"></i></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </footer>
-                                    <button class="primary" type="button" data-bs-dismiss="modal" aria-label="Close">Close Window</button> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!-- Scroll to Top Button-->
         <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
         <!-- Bootstrap core JS-->
