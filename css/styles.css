@@ -102,7 +102,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgb(14,18,18);
 }
 
 hr {
@@ -118,7 +118,7 @@ hr:not([size]) {
 }
 
 h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
-  color:azure;
+  color:rgb(219,219,219);
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 700;
@@ -253,11 +253,13 @@ sup {
 }
 
 a {
-  color: #1D809F;
+  font-weight: 600;
+  color: white;
   text-decoration: underline;
 }
 a:hover {
-  color: #17667f;
+  font-weight: 600;
+  color: rgb(104,42,233);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11353,10 +11355,9 @@ html {
 #sidebar-wrapper {
   position: fixed;
   z-index: 2;
-  right: 0;
+  right: auto;
   width: 100%;
-  height: 5%;
-  margin-top: 1.5%;
+  height: 10%;
   transition: all 1s ease 0.4s;
   transform: translateX(100%);
   background: rgba(2, 39, 119, 0);
@@ -11460,17 +11461,17 @@ footer.footer {
 footer.footer .social-link {
   display: block;
   text-decoration: none;
-  height: 4rem;
-  width: 4rem;
+  height: 1rem;
+  width: 2rem;
   line-height: 4.3rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   background-color: none;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0);
 }
 footer.footer i:hover {
   transition: color 0.15s ease-in-out;
-  color: rgb(89,226,196);
+  color: rgb(104,42,233);
   text-decoration: none;
 }
 
@@ -11541,6 +11542,7 @@ footer.footer i:hover {
   margin: auto 2rem 2rem;
 }
 .portfolio-item .caption .caption-content h2, .portfolio-item .caption .caption-content .h2 {
+  color: white;
   font-size: 80%;
   text-transform: uppercase;
 }
@@ -11585,12 +11587,14 @@ footer.footer i:hover {
   }
 
   .portfolio-item a {
+    font-weight: 600;
     color: rgb(255,255,255);
   }
 
   .portfolio-item a:hover {
-    transition: background-color 0.15s ease-in-out;
-    color: rgb(89,226,196);
+    transition: color 0.15s ease-in-out;
+    font-weight: 600;
+    color: rgba(104,42,233);
   }
 }
 
@@ -11699,8 +11703,8 @@ footer.footer i:hover {
 .service-icon {
   background-color: none;
   border-style: solid;
-  border-color: rgb(89,226,196);
-  color: rgb(89,226,196);
+  border-color: rgb(104,42,233);
+  color: rgb(104,42,233);
   height: 7rem;
   width: 7rem;
   display: block;
@@ -11720,7 +11724,7 @@ button.learn-more {
   background: transparent;
   padding: 0;
   font-size: inherit;
-  font-family: inherit;
+  font-family: Roboto;
   width: 12rem;
   height: auto;
 }
@@ -11760,8 +11764,8 @@ button.learn-more .circle .icon.arrow::before {
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid rgb(89,226,196);;
-  border-right: 0.125rem solid rgb(89,226,196);;
+  border-top: 0.125rem solid rgb(104,42,233);
+  border-right: 0.125rem solid rgb(104,42,233);
   transform: rotate(45deg);
 }
 
@@ -11774,8 +11778,8 @@ button.learn-more .button-text {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: dimgrey;
-  font-weight: 200;
+  color: grey;
+  font-weight: 300;
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
@@ -11786,12 +11790,12 @@ button.learn-more:hover .circle {
 }
 
 button.learn-more:hover .circle .icon.arrow {
-  background: rgb(89,226,196);;
+  background: rgb(104,42,233);
   transform: translate(1rem, 0);
 }
 
 button.learn-more:hover .button-text {
-  color: rgb(89,226,196);
+  color: white;
 }
 
 
@@ -12010,8 +12014,8 @@ input[type=radio] {
 .navItem {
   position: relative;
   display: block;
-  padding: 5px;
-  color: #ecf0f1;
+  padding: 10px;
+  color: white;
   text-decoration: none;
   text-transform: none;
   transition: 0.5s;
@@ -12031,14 +12035,14 @@ input[type=radio] {
   left: 0;
   width: 100%;
   height: 3px;
-  background: rgb(89,226,196);
+  background: rgb(104,42,233);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.5s;
 }
 
 .navItem:hover {
-  color: #95a5a6;
+  color: rgba(104,42,233,0.9);
 }
 
 .navItem:hover::after {
@@ -12057,27 +12061,15 @@ input[type=radio] {
 
 .title:after {
   content: '';
-  border-top: 2px solid;
+  border-top: 1px solid;
   margin: 0 20px 0 0;
   flex: 1 0 20px;
+  color: dimgrey;
 }
 
 .title:after {
   margin: 0 0 0 20px;
 }
-
-
-#particles-js {
-  opacity:1;
-  background-color:#000;
-  position:fixed;
-  width:100%;
-  height:100%;
-  top:0px;
-  left:0px;
-  z-index:-1;
-}
-
 
 button:focus,
 input:focus,
@@ -12124,11 +12116,11 @@ select:focus {
 .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid rgb(89,226,196); 
+  border-bottom: 1px solid rgb(104,42,233);
 }
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 2px solid rgb(89,226,196); 
+  border-bottom: 2px solid rgb(104,42,233);
 }
 .tabs [class^="tab"] [type="radio"]:checked + div,
 .tabs [class*=" tab"] [type="radio"]:checked + div {
@@ -12166,5 +12158,77 @@ select:focus {
 .tabs .tab-2:nth-child(4) [type="radio"] + div {
   width: 400%;
   margin-left: -300%; 
+}
+
+.progress-header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 8px;
+  height: 100%;
+  margin-top: 200px;
+  margin-left: 5%;
+  background-color: rgba(0,0,0,0);
+}
+
+.progress-container {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(rgba(104,42,233,0.3), rgba(104,42,233,0.5));
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(rgb(104,42,233), rgb(14,18,18));
+  width: 1px;
+  border-radius: 5px;
+  position:absolute;
+  bottom: 0;
+}
+
+.progress-circle {
+  position: absolute;
+  content: '';
+  border-radius: 50%;
+  height: .5em; width: .5em;
+  left: 0;
+  transform: translateX(-45%);
+  background: rgb(104,42,233);
+}
+
+#wrapper {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  padding: 2%;
+  font-family: monospace;
+  font-size: small;
+  background-color: rgb(14,18,18);
+}
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.scrolled.slide-right {
+  animation: slide-in-right 0.5s ease-in-out both;
+}
+
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 

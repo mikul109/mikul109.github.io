@@ -57,50 +57,7 @@ window.addEventListener('DOMContentLoaded', event => {
             }
         }
     })
-    
-    particlesJS("particles-js", {
-        particles: {
-            number: { value: 80, density: { enable: true, value_area: 800 } },
-            color: { value: "#ffffff" },
-            shape: {
-                type: "circle",
-                stroke: { width: 0, color: "#000000" },
-                polygon: { nb_sides: 5 },
-                image: { src: "img/github.svg", width: 100, height: 100 }
-            },
-            opacity: {
-                value: 0.5,
-                random: false,
-                anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
-            },
-            size: {
-                value: 3,
-                random: true,
-                anim: { enable: false, speed: 40, size_min: 0.1, sync: false }
-            },
-            line_linked: {
-                enable: true,
-                distance: 150,
-                color: "#ffffff",
-                opacity: 0.4,
-                width: 1
-            },
-            move: {
-                enable: true,
-                speed: 2,
-                direction: "none",
-                random: false,
-                straight: false,
-                out_mode: "out",
-                bounce: false,
-                attract: { enable: false, rotateX: 600, rotateY: 1200 }
-            }
-        },
-    });
 })
-
-
-
 
 function fadeOut(el) {
     el.style.opacity = 1;
@@ -124,6 +81,57 @@ function fadeIn(el, display) {
         }
     })();
 };
+
+
+function scrollbarFunction() {
+  // progress bar for scroll
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  var negscrolled = 100-scrolled
+  document.getElementById("myBar").style.height = negscrolled + "%";
+  document.getElementById("myCircle").style.top = scrolled + "%";
+
+}
+
+// fade in on scroll
+const scrollElements = document.querySelectorAll(".js-scroll");
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+
+// activate functions on scroll
+window.onscroll = function() {
+  scrollbarFunction();
+  handleScrollAnimation();
+};
+
+
 
 // auto scroll carousel
 function Check_next() {

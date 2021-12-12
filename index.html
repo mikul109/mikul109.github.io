@@ -13,38 +13,39 @@
         <!-- Simple line icons-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
         <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:200,300,700,200italic,300italic,700italic" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-        <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" crossorigin="anonymous"> </script>
 
     </head>
     <body id="page-top">
-        <!-- particles.js container -->
-        <div id="particles-js"></div>
+        <!-- scroll indicator -->
+        <div class="progress-header">
+            <div class="progress-circle" id="myCircle"></div>
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>
+        </div>
         <!-- Navigation-->
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-times"></i></a>
-        <div id="sidebar-wrapper">
+        <div id="wrapper">
             <nav class="navMenu">
-                <a class="navItem" href="#page-top">Home</a>
-                <a class="navItem" href="#about">About</a>
-                <a class="navItem" href="#skills">Skills</a>
-                <a class="navItem" href="#portfolio">Portfolio</a>
-                <a class="navItem" href="#contact">Contact</a>
+                <a class="navItem" href="#page-top"><span style="color: rgb(104,42,233);">01. </span>Home</a>
+                <a class="navItem" href="#about"><span style="color: rgb(104,42,233);">02. </span>About</a>
+                <a class="navItem" href="#portfolio"><span style="color: rgb(104,42,233);">03. </span>Portfolio</a>
+                <a class="navItem" href="#contact"><span style="color: rgb(104,42,233);">04. </span>Contact</a>
             </nav>
         </div>
         <!-- Header-->
-        <header class="masthead d-flex align-items-center" style="padding-top: 10%;">
-            <div class="container d-flex align-items-center flex-column">
+        <header class="masthead d-flex align-items-left" style="padding-top: 190px; padding-left: 5%; padding-bottom: 0;">
+            <div class="container d-flex align-items-left flex-column">
                 <!-- Masthead Text-->
-                <div class="container px-4 px-lg-5 text-center">
+                <div class="container px-4 px-lg-5 text-left">
                     <div>
-                        <h1 class="mb-1" style="font-weight: 100; color:azure;">Mikul Muzumdar</h1>
-                        <h3 class="mb-5" style="font-weight: 200; color: dimgrey;"><em>Business Analytics & Information Technology Student at Rutgers University</em></h3>
+                        <h1 class="mb-1" style="font-family: Roboto; font-weight: 100; color:rgb(219,219,219);">Mikul <span style="color: rgb(104,42,233);">Muzumdar</span></h1>
+                        <h3 class="mb-5" style="font-family: Roboto; font-weight: 300; color: grey;"><em>Business Analytics & Information Technology Student at Rutgers University</em></h3>
                     </div>
                 </div>
-                <h4 style="color: rgb(89,226,196);">Featured Projects</h4>
+                <p style="font-family: Roboto; font-weight: 400; color: rgb(104,42,233); margin: auto; padding-right: 40%;">FEATURED PROJECTS</p>
                 <div class="carousel-container">
                     <input type="radio" name="slider" id="item-1" checked>
                     <input type="radio" name="slider" id="item-2">
@@ -71,59 +72,68 @@
             </div>
         </header>
         <!-- About-->
-        <section class="content-section" id="about" style="padding-top: 5%; padding-bottom: 0;">
-            <div class="container px-4 px-lg-5 text-left">
-                <div class="row gx-4 gx-lg-5 justify-content-left">
-                    <div class="col-lg-0">
-                        <h2 class = "title" style="font-weight: 100;">About Me</h2>
-                        <p class="mb-0" style="color: dimgrey;">
-                           <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I am a Senior at Rutgers University, majoring in Business Analytics & Information Technology, and minoring in Economics.
-                        </p>
-                        <p class="mb-0" style="color: dimgrey;">
-                            <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I have experience in large-scale statistical analysis and forecasting/modeling in R and Python.
-                        </p>
-                        <p class="mb-0" style="color: dimgrey;">
-                            <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I'm passionate about data and have an interest in data mining and machine learning.
-                        </p>
-                        <p class="mb-5" style="color: dimgrey;">
-                            <span style="font-size: 1.2rem; color: rgb(89,226,196);">> </span> I'd like to utilize my experiences to pursue a career in Data Analytics or Business Intelligence.
-                        </p>
+        <section class="scroll-container">
+            <section class="js-scroll slide-right">
+                <section class="content-section" id="about" style="padding-top: 15%; padding-left: 5%; padding-bottom: 0;">
+                    <div class="container px-4 px-lg-5 text-left">
+                        <div class="row gx-4 gx-lg-5 justify-content-left">
+                            <div class="col-lg-0">
+                                <div style="display: flex;">
+                                    <h2 style="font-family: monospace; font-size: 150%; font-weight: 100; color: rgb(104,42,233);">02. </h2>
+                                    <h2 class = "title" style="font-family: Roboto; font-size: 150%; font-weight: 700; margin-left: 1%;">About Me</h2>
+                                </div>
+                                <p class="mb-0" style="color: grey;">
+                                <span style="font-size: 1.2rem; color: rgb(104,42,233);">> </span> I am a Senior at Rutgers University, majoring in Business Analytics & Information Technology, and minoring in Economics.
+                                </p>
+                                <p class="mb-0" style="color: grey;">
+                                    <span style="font-size: 1.2rem; color: rgb(104,42,233);">> </span> I have experience in large-scale statistical analysis and modeling in R and Python.
+                                </p>
+                                <p class="mb-0" style="color: grey;">
+                                    <span style="font-size: 1.2rem; color: rgb(104,42,233);">> </span> I'm passionate about data and have an interest in data mining and machine learning.
+                                </p>
+                                <p class="mb-5" style="color: grey;">
+                                    <span style="font-size: 1.2rem; color: rgb(104,42,233);">> </span> I'd like to utilize my experiences to pursue a career in Data Analytics or Business Intelligence.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-        <!-- Skills-->
-        <section class="content-section text-white text-center" id="skills" style="padding-top: 5%; padding-bottom: 0;">
-            <div class="container px-4 px-lg-5">
-                    <h2 class = "title" style="margin-bottom: 5%; font-weight: 100;">Skills</h2>
-                <div class="row gx-4 gx-lg-5" style="font-weight: 100;">
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-python"></i></span>
-                        <h4><strong>Python</strong></h4>
-                        <p class="text-faded mb-0">Data manipulation and machine learning</p>
+                </section>
+                <!-- Skills-->
+                <section class="content-section text-white text-center" id="skills" style="padding-top: 0; padding-left: 5%; padding-bottom: 0;">
+                    <div class="container px-4 px-lg-5">
+                        <div class="row gx-4 gx-lg-5" style="font-weight: 100;">
+                            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-python"></i></span>
+                                <h4><strong>Python</strong></h4>
+                                <p class="text-faded mb-0">Data manipulation and machine learning</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-r-project"></i></span>
+                                <h4><strong>R</strong></h4>
+                                <p class="text-faded mb-0">Statistical analysis, modeling, and data mining</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-database"></i></span>
+                                <h4><strong>SQL</strong></h4>
+                                <p class="text-faded mb-0">Creating, manipulating, and querying relational databases</p>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-js-square"></i></span>
+                                <h4><strong>JavaScript</strong></h4>
+                                <p class="text-faded mb-0">Web development and data visualization</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-r-project"></i></span>
-                        <h4><strong>R</strong></h4>
-                        <p class="text-faded mb-0">Statistical analysis, modeling, and data mining</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fas fa-database"></i></span>
-                        <h4><strong>SQL</strong></h4>
-                        <p class="text-faded mb-0">Creating, manipulating, and querying relational databases</p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <span class="service-icon rounded-circle mx-auto mb-3"><i class="fab fa-js-square"></i></span>
-                        <h4><strong>JavaScript</strong></h4>
-                        <p class="text-faded mb-0">Web development and data visualization</p>
-                    </div>
-                </div>
-            </div>
+                </section>
+            </section>
         </section>
         <!-- Portfolio-->
-        <section class="content-section " id="portfolio">
-            <div class="container px-4 px-lg-5">
-                    <h2 class="title" style="font-weight: 100;">Portfolio</h2>
+        <section class="content-section scroll-container" id="portfolio" style="padding-top: 10%; padding-left: 5%; padding-bottom: 0;">
+            <div class="container js-scroll slide-right px-4 px-lg-5">
+                <div style="display: flex;">
+                    <h2 style="font-family: monospace; font-size: 150%; font-weight: 100; color: rgb(104,42,233);">03. </h2>
+                    <h2 class = "title" style="font-family: Roboto; font-size: 150%; font-weight: 700; margin-left: 1%;">Portfolio</h2>
+                </div>
                     <div class="tabs">
                         <div class="tab-2">
                           <label for="tab2-1">All</label>
@@ -136,8 +146,8 @@
                                             <div class="caption-content">
                                                 <div class="h2">Fossil Fuel Application</div>
                                                 <p class="mb-5">An R Shiny Web Application analyzing global Fossil Fuel Emissions.</p>
-                                                <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_1.JPG" alt="..." />
@@ -149,8 +159,8 @@
                                             <div class="caption-content">
                                                 <div class="h2">COVID-19 Dashboard</div>
                                                 <p class="mb-5">A Python Dash Application visualizing COVID-19 spread and vaccination data.</p>
-                                                <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_2.JPG" alt="..." />
@@ -162,8 +172,8 @@
                                             <div class="caption-content">
                                                 <div class="h2">NBA Web Scraper</div>
                                                 <p class="mb-5">A Python Web Scraper that uses BeautifulSoup to scrape NBA data.</p>
-                                                <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_3.JPG" alt="..." />
@@ -175,8 +185,8 @@
                                             <div class="caption-content">
                                                 <div class="h2">Employment Statistics Visualization</div>
                                                 <p class="mb-5">A chart.js application that visualizes data from the U.S. Bureau of Labor Statistics.</p>
-                                                <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_4.JPG" alt="..." />
@@ -188,7 +198,7 @@
                                             <div class="caption-content">
                                                 <div class="h2">Vaccine Sentiments</div>
                                                 <p class="mb-5">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
-                                                <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
@@ -200,7 +210,7 @@
                                             <div class="caption-content">
                                                 <div class="h2">Census Analysis</div>
                                                 <p class="mb-5">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
-                                                <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_6.JPG" alt="..." />
@@ -220,8 +230,8 @@
                                             <div class="caption-content">
                                                 <div class="h2">COVID-19 Dashboard</div>
                                                 <p class="mb-5">A Python Dash Application visualizing COVID-19 spread and vaccination data.</p>
-                                                <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://mikul109covid.herokuapp.com/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                <div><a href="https://github.com/mikul109/covid-app" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_2.JPG" alt="..." />
@@ -233,8 +243,8 @@
                                             <div class="caption-content">
                                                 <div class="h2">NBA Web Scraper</div>
                                                 <p class="mb-5">A Python Web Scraper that uses BeautifulSoup to scrape NBA data.</p>
-                                                <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://mikul109nba.herokuapp.com/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                <div><a href="https://github.com/mikul109/nba-scraper" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_3.JPG" alt="..." />
@@ -246,7 +256,7 @@
                                             <div class="caption-content">
                                                 <div class="h2">Census Analysis</div>
                                                 <p class="mb-5">A Python Jupyter notebook that analyzes US economic data using K-means clustering.</p>
-                                                <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                <div><a href="https://github.com/mikul109/census-data" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                             </div>
                                         </div>
                                         <img class="img-fluid" src="assets/img/Capture_6.JPG" alt="..." />
@@ -266,8 +276,8 @@
                                                 <div class="caption-content">
                                                     <div class="h2">Fossil Fuel Application</div>
                                                     <p class="mb-5">An R Shiny Web Application analyzing global Fossil Fuel Emissions.</p>
-                                                    <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                    <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                    <div><a href="https://mikul109.shinyapps.io/co2-app/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                    <div><a href="https://github.com/mikul109/co2-dashboard" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                                 </div>
                                             </div>
                                             <img class="img-fluid" src="assets/img/Capture_1.JPG" alt="..." />
@@ -279,7 +289,7 @@
                                                 <div class="caption-content">
                                                     <div class="h2">Vaccine Sentiments</div>
                                                     <p class="mb-5">An R notebook that performs Sentiment Analysis from tweets about COVID-19 and the vaccine.</p>
-                                                    <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                    <div><a href="https://github.com/mikul109/vaccine-sentiment" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                                 </div>
                                             </div>
                                             <img class="img-fluid" src="assets/img/Capture_5.png" alt="..." />
@@ -299,8 +309,8 @@
                                                 <div class="caption-content">
                                                     <div class="h2">Employment Statistics Visualization</div>
                                                     <p class="mb-5">A chart.js application that visualizes data from the U.S. Bureau of Labor Statistics.</p>
-                                                    <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square"></i> Website</a></div>
-                                                    <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+                                                    <div><a href="https://mikul109.github.io/bls-chart/" target="_blank"><i class="fas fa-share-square" style="margin-right: 1%;"></i>Website</a></div>
+                                                    <div><a href="https://github.com/mikul109/bls-chart" target="_blank"><i class="fab fa-github" style="margin-right: 1%;"></i>GitHub</a></div>
                                                 </div>
                                             </div>
                                             <img class="img-fluid" src="assets/img/Capture_4.JPG" alt="..." />
@@ -312,15 +322,17 @@
                     </div>
             </div>
         </section>
-
         <!-- Contact info-->
-        <section class="content-section" id="contact" style="height: 100px; padding: 0;">
+        <section class="content-section" id="contact" style="padding-top: 5%; padding-left: 5%; padding-bottom: 0;">
             <section class="content-section text-white" style="padding: 0;">
                 <div class="container px-4 px-lg-5 text-left">
-                    <h2 class="title" style="padding-top: 30px; font-weight: 100;">Contact Information</h2>
+                    <div style="display: flex;">
+                        <h2 style="font-family: monospace; font-size: 150%; font-weight: 100; color: rgb(104,42,233);">04. </h2>
+                        <h2 class = "title" style="font-family: Roboto; font-size: 150%; font-weight: 700; margin-left: 1%;">Contact Me</h2>
+                    </div>
                 </div>
                 <!-- Footer-->
-                <footer class="footer text-left">
+                <footer class="footer text-left" style="padding-top: 0;">
                     <div class="container px-4 px-lg-5">
                         <ul class="list-inline" style="margin-left: 1%;">
                             <li class="list-inline-item">
